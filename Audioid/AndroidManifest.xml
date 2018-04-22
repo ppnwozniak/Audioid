@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.audioid"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AppCompat.Light" >
+        <activity
+            android:name="com.example.audioid.Audioid"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.audioid.DisplayMessageActivity"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName="com.example.audioid.Audioid" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.audioid.Audioid" />
+        </activity>
+        <activity
+            android:name="com.example.audioid.GetPatientDataMenu"
+            android:label="@string/title_activity_get_patient_data_menu" >
+        </activity>
+        <activity
+            android:name="com.example.audioid.PatientMenu"
+            android:label="@string/title_activity_patient_menu" >
+        </activity>
+        <activity
+            android:name="com.example.audioid.LoadPatientDataMenu"
+            android:label="@string/title_activity_load_patient_data_menu" >
+        </activity>
+        <activity
+            android:name="com.example.audioid.PTA"
+            android:label="@string/title_activity_pt" >
+        </activity>
+        <activity
+            android:name="com.example.audioid.UCL"
+            android:label="@string/title_activity_ucl" >
+        </activity>
+        <activity
+            android:name="com.example.audioid.PTAandUCL"
+            android:label="@string/title_activity_ptaand_ucl" >
+        </activity>
+        <activity
+            android:name="com.example.audioid.History"
+            android:label="@string/title_activity_history" >
+        </activity>
+        <activity
+            android:name="com.example.audioid.ShowResult"
+            android:label="@string/title_activity_show_result" >
+        </activity>
+    </application>
+
+</manifest>
